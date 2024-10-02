@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--estilos-->
+    <link rel="stylesheet" href="estilo/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilo/icon.css">
+    <link rel="stylesheet" href="estilo/inicio.css">
+    <link rel="stylesheet" href="estilo/comida.css">
+    <link rel="stylesheet" href="estilo/menu.css">
+    <link rel="stylesheet" href="estilo/sobremesa.css">
+    <link rel="stylesheet" href="estilo/insta.css">
+    <title>hamire_recepty</title>
+</head>
+
+<body>
+    <!--inicio-->
+    <!--sessao onde vai ficar as informacoes de banner inicial-->
+    <section class="inicio" id="inicio">
+        <div class="container-inicio">
+            <h1>Então o que cozinhar hoje?</h1>
+            <div class="search-container">
+                <span class="fluent--food-48-regular left-icon"></span>
+                <input type="text" id="searchBox" placeholder="Buscar...">
+                <i class="fas fa-search left-icon"></i>
+            </div>
+            <h3>Bem vindo ao restaurante hamires! Confira o cardapio de hoje...</h3>
+
+        </div>
+    </section><!--fim de  inicio-->
+    <!--comidas-->
+    <!--nesta sessao vai estar as informacoes de mais pedidos-->
+    <section class="comidas" id="comidas">
+        <div class="container-comida">
+            <h1>Os mais pedidos da semana</h1>
+            <ul id="itemLista">
+                <li class="iten">
+                    <img src="imgs/macarronada.png" alt="macarronada">
+                    Macarronada
+                    <p style="color: black;">macarrao, molho, carne moida e ovos</p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="iten">
+                    <img src="imgs/feijoada.jpg" alt="feijoada">
+                    Feijoada
+                    <p style="color: black;">fejao preto, calabresa, bacon e molho especial</p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="iten">
+                    <img src="imgs/panelada.jpg" alt="panelada">
+                    Panelada
+                    <p style="color: black;">buxada, tripas de gado, figado e estomago</p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="iten">
+                    <img src="imgs/peixe.jpeg" alt="peixe">
+                    Tilápia frita
+                    <p style="color: black;">tilápia, molho especial e legumes </p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="iten">
+                    <img src="imgs/sarrabulho.jpg" alt="sarrabulho">
+                    Sarrabulho
+                    <p style="color: black;">carneiro, legumes cozidos e molho especial</p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section><!--fim de comidas-->
+    <!--menu-->
+    <!--nesta sessao vai ter toda a aba de menu do restaurante-->
+    <section class="menu" id="menu">
+        <div class="container-menu">
+            <div class="titulos-menu">
+                <h1>Receitas</h1>
+                <p>Temos um pedido para cada dia da semana</p>
+            </div>
+            <div class="botoes-menu">
+                <button onclick="showItems('segunda')">Segunda</button>
+                <button onclick="showItems('terca')">Terça</button>
+                <button onclick="showItems('quarta')">Quarta</button>
+                <button onclick="showItems('quinta')">Quinta</button>
+                <button onclick="showItems('sexta')">Sexta</button>
+            </div>
+            <ul id="itemList">
+                <!-- Os itens serão adicionados aqui pelo JavaScript -->
+            </ul>
+        </div>
+    </section><!--fim de menu-->
+    <!--fds-->
+    <!--nesta parte vai ficar todas as comidas especiais de fim de semana-->
+    <section class="fds" id="fds">
+        <div class="container-fds">
+            <ul id="itemLista">
+                <li class="iten">
+                    <img src="imgs/macarronada.png" alt="macarronada">
+                    Macarronada
+                    <p style="color: black;">macarrao, molho, carne moida e ovos</p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="iten">
+                    <img src="imgs/feijoada.jpg" alt="feijoada">
+                    Feijoada
+                    <p style="color: black;">fejao preto, calabresa, bacon e molho 
+            especial</p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="iten">
+                    <img src="imgs/panelada.jpg" alt="panelada">
+                    Panelada
+                    <p style="color: black;">buxada, tripas de gado, figado e estomago</p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="iten">
+                    <img src="imgs/peixe.jpeg" alt="peixe">
+                    Tilápia frita
+                    <p style="color: black;">tilápia, molho especial e legumes </p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="iten">
+                    <img src="imgs/sarrabulho.jpg" alt="sarrabulho">
+                    Sarrabulho
+                    <p style="color: black;">carneiro, legumes cozidos e molho especial</p>
+                    <div class="buy-comida">
+                        <h4 style="color: black;">R$15,00</h4>
+                        <div class="stars-comida">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section><!-- fim de fds-->
+    <!--sobremesa-->
+    <!--nesta sessao vai ter todo o conteudo relacioonado a aba de sobremesa-->
+    <section class="sobremesa" id="sobremesa">
+        <div class="container-sobremesa">
+            <div class="titulos-sobremesa">
+                <h1>Sobremesas</h1>
+                <p>Já terminou o almoço? Que tal experimentar uma boa sobremesa?</p>
+            </div>
+            <div class="itens-sobremesa">
+                <div class="item-sobremesa">
+                    <img src="imgs/pudim.png">
+                    <h1>Pudim</h1>
+                    <p>Temos pudins dos mais variados sabores</p>
+                    <div class="preco-sobremesa">
+                        <h3>R$8,00</h3>
+                        <div class="stars-sobremesa">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-sobremesa">
+                    <img src="imgs/torta.png">
+                    <h1>Tortas</h1>
+                    <p>Temos tortas de morango, maracuja e limão</p>
+                    <div class="preco-sobremesa">
+                        <h3>R$15,00</h3>
+                        <div class="stars-sobremesa">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-sobremesa">
+                    <img src="imgs/doces.png">
+                    <h1>Doces</h1>
+                    <p>Temos doces de todos os estilos</p>
+                    <div class="preco-sobremesa">
+                        <h3>R$5,00</h3>
+                        <div class="stars-sobremesa">
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                            <span class="emojione--star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--fim de sobremesa-->
+    <!--instagram-->
+    <!--nesta aba vai estar toda a sessao de despedida, contendo links do instagram-->
+    <section class="insta" id="insta">
+        <div class="container-insta">
+            <div class="titulos-insta">
+                <h1>Instagram</h1>
+                <P>Quer nos acompanhar em tempo real, e ver nossas novidades?</P>
+            </div>
+            <div class="imgs-insta">
+                <div class="quarteto-imgs">
+                    <div class="dueto-img">
+                        <h2>Siga-nos no instagram</h2>
+                        <img src="imgs/cafe.png">
+                    </div>
+                    <div class="dueto-img">
+                        <img src="imgs/bolo.png">
+                        <img src="imgs/refri.png">
+                    </div>
+                </div>
+                <div class="img-unica">
+                    <img src="imgs/hamburguer.jpg">
+                </div>
+            </div>
+            <div class="subti-insta">
+                <div class="iens-insta">
+                    <p>Quer mais opções?</p>
+                    <h1>Vejas as sujestões abaixo</h1>
+                    <ul class="botoes-menu bot-insta">
+                        <li><button>Prato feito</button></li>
+                        <li><button>Entregas</button></li>
+                        <li><button>Adicionais</button></li>
+                        <li><button>Especiais</button></li>
+                        <li><button>Aniversario</button></li>
+                        <li><button>Surpresas</button></li>
+                    </ul>
+                    <ul class="botoes-menu">
+                        <li><button>Dia dos pais</button></li>
+                        <li><button>Dia das mães</button></li>
+                        <li><button>Personalizados</button></li>
+                        <li><button>Inclusivo</button></li>
+                    </ul>
+                </div>
+                <div class="img-insta-1">
+                    <img src="imgs/colheres-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section><!--fim de insta-->
+    <footer>
+        <p>Direitos autorais reservados em 11/09/24 | Desenvolvido pela @Wisetalk.br</p>
+    </footer>
+    <!--sessao de scripts-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

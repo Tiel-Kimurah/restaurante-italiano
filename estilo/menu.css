@@ -1,0 +1,69 @@
+
+.menu {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.titulos-menu h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.titulos-menu p {
+    font-size: 16px;
+    color: orangered;
+    font-weight: bold;
+}
+.botoes-menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(192, 186, 184);
+    color: black;
+    cursor: pointer;
+    border-radius: 22px;
+}
+.botoes-menu button:hover {
+    background-color: orangered;
+    color: white;
+    transition: 0.2s;
+}
+#itemList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+#itemList img {
+    width: 270px;
+    height: 190px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(214, 195, 195), rgb(255, 255, 255));
+    gap: 1rem;
+}
+.item p{
+    font-weight: bold;
+    width: 200px;
+}
+.buy-comida{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.item{
+    color: orangered;
+}

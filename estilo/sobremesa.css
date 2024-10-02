@@ -1,0 +1,52 @@
+
+
+.container-sobremesa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+.titulos-sobremesa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.titulos-sobremesa h1{
+    font-size: 2rem;
+}
+.titulos-sobremesa p{
+    color: orangered;
+}
+.itens-sobremesa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center ;
+    gap: 1rem;
+}
+.item-sobremesa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    background-image: linear-gradient(to right, rgb(214, 195, 195), rgb(255, 255, 255));
+    width: 270px;
+}
+.item-sobremesa img{
+    width: 270px;
+    height: 180px;
+}
+.item-sobremesa p{
+    width: 260px;
+}
+.preco-sobremesa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}

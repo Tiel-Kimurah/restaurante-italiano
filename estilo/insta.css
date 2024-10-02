@@ -1,0 +1,132 @@
+
+
+.container-insta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+.titulos-insta{
+    text-align: center;
+}
+.titulos-insta h1{
+    font-size: 2rem;
+}
+.titulos-insta p{
+    color: orangered;
+}
+.quarteto-imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.dueto-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.dueto-img img{
+    width: 200px;
+}
+.dueto-img h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    width: 200px;
+    padding:65px 50px;
+    background-color: orangered;
+    color: white;
+    font-size: 1.2rem;
+}
+.imgs-insta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.img-unica img{
+    width: 400px;
+    height: 364px;
+}
+.subti-insta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.iens-insta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    text-align: center;
+}
+.bot-insta{
+    padding-top: 2rem;
+}
+.img-insta-1 img{
+    z-index: -1;
+    margin-left: -12rem;
+}
+@media (max-width:450px){
+    .subti-insta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-insta-1 img{
+        margin-left: 0;
+        margin-top: -13rem;
+    }
+    .quarteto-imgs{
+        gap: 0.3rem;
+    }
+    .imgs-insta{
+        gap: 0.3rem;
+    }
+    .dueto-img{
+        gap: 0.3rem;
+    }
+    .dueto-img img{
+        width: 100px;
+    }
+    .dueto-img h2{
+        width: 100px;
+        padding:26px 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .img-unica img{
+        width: 206px;
+        height: 180px;
+    }
+    .img-insta-1 img{
+        width: 270px;
+    }
+    .iens-insta p{
+        color: orangered;
+    }
+    .titulos-insta p{
+        width: 260px;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(122, 118, 118) ;
+}
+footer p{
+    opacity: 70%;
+    font-size: 0.8rem;
+    text-align: center;
+}
